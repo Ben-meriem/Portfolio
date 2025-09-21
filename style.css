@@ -125,7 +125,7 @@ nav a {
 }
 
 .accueil-introduction {
-  height: 100%;
+
   display: flex;
   flex-direction: row;
   width: 50%;
@@ -228,4 +228,7 @@ padding-left: 50px;
 
 video{
  margin-top: 20px;
+}
+.main{
+    height: 100%;
 }
