@@ -1,64 +1,230 @@
+* {
+  margin: 0;
+}
+
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    line-height: 1.6;
-    background: #f4f4f9;
-    color: #333;
+  font-family: 'Manrope', sans-serif;
+  font-size: 1em;
+  background-color: #1f2039;
 }
 
-header {
-    background: #0078d7;
-    color: white;
-    text-align: center;
-    padding: 2rem;
+a {
+  color: #242424;
+  text-decoration: none;
 }
 
-header h1 {
-    margin: 0;
-    font-size: 2.5rem;
+em {
+  color: #a5b4fc;
+  font-style: normal;
 }
 
-header h2 {
-    margin: 0.5rem 0;
-}
-
-.btn {
-    display: inline-block;
-    background: white;
-    color: #0078d7;
-    padding: 0.5rem 1rem;
-    margin-top: 1rem;
-    text-decoration: none;
-    border-radius: 5px;
-}
-
-section {
-    padding: 2rem;
-    max-width: 900px;
-    margin: auto;
+h1 {
+  font-size: 3.5em;
+  color: #a5b4fc;
+  font-family: 'Montserrat', sans-serif;
 }
 
 h2 {
-    color: #0078d7;
-    margin-bottom: 1rem;
+  color: #f9f8ff;
 }
 
-.projet {
-    background: white;
-    padding: 1rem;
-    margin-bottom: 1rem;
-    border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+p,
+li {
+  font-size: 1.1em;
+  color: #f9f8ff;
+ 
 }
 
+header,
 footer {
-    text-align: center;
-    background: #333;
-    color: white;
-    padding: 1.5rem;
+  background-color: white;
+  padding: 20px 50px;
 }
-footer a {
-    color: #00aced;
-    text-decoration: none;
+
+.cta {
+  background: linear-gradient(#8e86b5, #acaeed);
+  color: white;
+  border-radius: 50px;
+  padding: 20px 30px;
+  
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.cta:hover {
+  background: linear-gradient(#696484, #8788ba);
+  text-decoration: none;
+}
+
+a[class="cta"]{
+  margin-top: 20px;
+}
+
+.lien-icone {
+  margin-left: 30px;
+}
+
+.lien-icone:hover {
+  opacity: 0.5;
+}
+
+.carre-contenu {
+  border-right: 1px solid #8e86b5;
+  border-bottom: 1px solid #8e86b5;
+  padding: 50px;
+}
+
+.carre-contenu h2 {
+  margin-top: 30px;
+}
+
+.carre-contenu ul {
+  margin-top: 30px;
+}
+
+section {
+  padding: 40px;
+}
+
+.a-propos-main {
+  width: 50%;
+  margin: auto;
+}
+
+
+nav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+nav a {
+  margin-left: 30px;
+}
+
+.accueil-photos {
+  background-color: white;
+  padding: 80px;
+}
+
+.accueil-photos h2 {
+  color: #242424;
+  text-align: center;
+  margin-bottom: 80px;
+}
+
+.accueil-photos div {
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+  justify-content: center;
+  margin-bottom: 15px;
+}
+
+.accueil-introduction {
+  display: flex;
+  flex-direction: row;
+  width: 50%;
+  align-items: center;
+  margin: auto;
+}
+
+a[class="cta"]{
+  margin: 50px;
+}
+
+.portfolio-section-photos {
+  background-color: white;
+}
+
+.portfolio-section-photos h2 {
+  color: #242424;
+  margin-top: 80px;
+  margin-bottom: 80px;
+}
+
+.grid-paysages img,
+.grid-portraits img {
+  padding-top: 30px;
+  width: 100%;
+  height: 100%;
+  /* Même si vous ne connaissez pas cette propriété, vous en aurez besoin pour permettre aux images de respecter les dimensions de la grid CSS */
+  object-fit: cover;
+}
+
+.grid-paysages{
+  display: grid;
+  grid-template-columns: 1fr  1fr   1fr ;
+  grid-template-rows:  300px  300px  300px;
+
+  
+  gap: 15px
+}
+
+.grid-portraits{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 300px 300px;
+  gap: 15px
+}
+
+.grid-paysages img,
+.grid-portraits img {
+  width: 100%;
+  height:100%;
+  object-fit: cover;
+}
+
+.icon {
+  width: 55px;
+  height: 55px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.maphoto{
+  width: 400px;
+  height: 400px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.contact{
+   text-align: center;
+    padding: 1rem;
+    width: 90%;
+}
+
+.contact h2{color: black;}
+.contact p{color: rgb(29, 97, 181);}
+
+footer{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.devclass h2, .webclass h2, .mobileclass h2{
+  padding-bottom: 30px;
+}
+
+.devclass div, .webclass div, .mobileclass div{
+
+padding-left: 50px;
+}
+
+.btndev{
+  color: white;
+  background: linear-gradient(#8e86b5, #acaeed);
+  border-radius: 50px;
+ padding: 10px;
+ margin-left: 40%;
+ 
+}
+
+video{
+ margin-top: 20px;
 }
