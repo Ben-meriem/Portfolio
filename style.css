@@ -295,3 +295,6 @@ video{
   background: rgba(255, 255, 255, 0.05);
   border-radius: 6px;
 }
+.formation-item h3{
+  padding-bottom: 10px;
+}
