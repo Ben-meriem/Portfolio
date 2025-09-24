@@ -254,4 +254,8 @@ video{
   background-color: #2E335B;
   margin-bottom: 20px;
   border-radius: 10px;
+
+}
+.divbtn a{
+  text-align: center;
 }
