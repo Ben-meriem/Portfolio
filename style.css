@@ -259,3 +259,11 @@ video{
 .divbtn a{
   text-align: center;
 }
+
+.devclass:hover,
+.mobileclass:hover,
+.webclass:hover {
+  background-color: #3C3F73; /* éclaircissement */
+  transform: translateY(-5px); /* léger effet de “flottement” */
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.4);
+}
