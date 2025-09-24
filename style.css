@@ -263,12 +263,35 @@ video{
   margin-bottom: 20px;
   border-radius: 10px;
   transition: all 0.3s ease;
-  border: 1px solid transparent;
+  border: 2px solid transparent;
 }
 
 .devclass:hover,
 .mobileclass:hover,
 .webclass:hover {
    background-color: #3C3F73; /* éclaircissement *//* rose pastel élégant */
-  transform: scale(1.02); /* léger zoom */
+   transform: scale(1.02); /* léger zoom */
+}
+
+.formations {
+  width: 70%;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: #2E335B;
+  border-radius: 10px;
+  color: white;
+}
+
+.formations h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #DBBADD; /* couleur accentuée */
+}
+
+.formation-item {
+  margin-bottom: 20px;
+  padding: 15px;
+  border-left: 4px solid #DBBADD;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 6px;
 }
