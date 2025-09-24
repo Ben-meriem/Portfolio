@@ -14,6 +14,7 @@ html, body {
   height: 100%;
 }
 main {
+  margin-top: 25px;
   flex: 1; /* prend tout l’espace disponible / si on fait pas cette proprété :Si le contenu est petit (par ex. un simple paragraphe sur mobile), le footer remonte juste après ce contenu. */
 }
 
@@ -47,7 +48,15 @@ li {
 header,
 footer {
   background-color: white;
-  padding: 20px 50px;
+  padding: 2px 50px;
+}
+
+header{
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000; /* pour rester au-dessus du contenu */
 }
 
 .cta {
@@ -101,7 +110,6 @@ section {
   width: 50%;
   margin: auto;
 }
-
 
 nav {
   display: flex;
