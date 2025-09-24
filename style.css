@@ -249,21 +249,26 @@ video{
   align-items: center;
 }
 
-.devclass, .mobileclass, .webclass{
+
+.divbtn a{
+  text-align: center;
+}
+
+
+.devclass,
+.mobileclass,
+.webclass {
   width: 70%;
   background-color: #2E335B;
   margin-bottom: 20px;
   border-radius: 10px;
-
-}
-.divbtn a{
-  text-align: center;
+  transition: all 0.3s ease;
+  border: 1px solid transparent;
 }
 
 .devclass:hover,
 .mobileclass:hover,
 .webclass:hover {
-  background-color: #3C3F73; /* éclaircissement */
-  transform: translateY(-5px); /* léger effet de “flottement” */
-  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.4);
+   background-color: #3C3F73; /* éclaircissement *//* rose pastel élégant */
+  transform: scale(1.02); /* léger zoom */
 }
